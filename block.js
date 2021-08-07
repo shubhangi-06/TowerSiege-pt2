@@ -21,9 +21,9 @@ class Block{
           pop();
         }else{
           push();
-          World.remove(world,this.body);
           this.Visibility = this.Visibility - 5;
           tint(255,this.Visibility);
+          World.remove(world,this.body);
           pop();
         }
       }
